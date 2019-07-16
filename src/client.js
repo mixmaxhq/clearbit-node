@@ -6,7 +6,7 @@ var _           = require('lodash');
 var Promise     = require('bluebird');
 var createError = require('create-error');
 var http        = require('http');
-var needle      = Promise.promisifyAll(require('needle'));
+var needle      = Promise.promisifyAll(require('@mixmaxhq/needle'));
 var pkg         = require('../package.json');
 
 function ClearbitClient (config) {
